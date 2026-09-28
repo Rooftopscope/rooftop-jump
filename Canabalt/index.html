@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" data-embed="true">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#1c2b34" />
+    <meta name="description" content="Race across the rooftops as Ronin. One button, endless city, one more run." />
+    <title>Rooftop</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <style>
+      :root { color-scheme:dark; font-family:system-ui,sans-serif; background:#1c2b34; color:#edf2ef; }
+      * { box-sizing:border-box; }
+      html,body { width:100%; height:100%; margin:0; overflow:hidden; }
+      body { height:100dvh; padding:env(safe-area-inset-top) env(safe-area-inset-right) 0 env(safe-area-inset-left); }
+      #game { width:100%; height:100%; background:#1c2b34; }
+      #game:fullscreen { width:100vw; height:100dvh; }
+      #game:empty::before { content:'Loading the city…'; display:grid; place-items:center; height:100%; color:#beccc7; }
+      .asset-notice { position:fixed; bottom:72px; left:16px; right:16px; margin:0; padding:12px; background:#1c2b34; color:#edf2ef; font-size:12px; z-index:5; }
+      noscript { position:fixed; inset:0; display:grid; place-items:center; background:#1c2b34; padding:24px; }
+    </style>
+  </head>
+  <body>
+    <main id="game" aria-label="Rooftop game" aria-busy="true"></main>
+    <noscript>Enable JavaScript to play Rooftop.</noscript>
+    <script type="module" src="./src/demo.js"></script>
+  </body>
+</html>

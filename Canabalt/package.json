@@ -1,0 +1,13 @@
+{
+  "name": "rooftop-runner",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "test": "node --test",
+    "build:itch": "node scripts/build-itch.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
